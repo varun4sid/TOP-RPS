@@ -1,0 +1,39 @@
+html {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#score-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score-container h2 {
+    display : inline;
+    flex: 1;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+#score {
+    display: inline;
+}
+
+#player-text {
+    margin : auto;
+}
+
+#playground {
+    margin : 20px 50px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#playground button {
+    justify-content: center;
+}
