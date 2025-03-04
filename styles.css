@@ -1,39 +1,62 @@
-html {
+body {
+
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     background-color: black;
     color: white;
+}
+
+header {
     text-align: center;
-}
-
-#score-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-#score-container h2 {
-    display : inline;
-    flex: 1;
 }
 
 hr {
     opacity: 0.3;
 }
 
-#score {
-    display: inline;
+#score-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#player-text {
-    margin : auto;
+#score {
+    display: flex;
+    min-width: 100px;
+    gap: auto;
+}
+
+#score h2 {
+    text-align: center;
 }
 
 #playground {
-    margin : 20px 50px 0px;
-    display:flex;
-    justify-content: space-between;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-#playground button {
-    justify-content: center;
+#score h2 {
+    flex: 1 1 0%;
+}
+
+.choice {
+    padding: 10px;
+}
+
+#playground {
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 5px;
+    margin: 50px auto;
+    /* min-width: 100px; */
+    /* width: 1000px; */
+    height: 80px;
+}
+
+#gamelog {
+    text-align: center;
+}
+
+.hide {
+    display:none;
 }

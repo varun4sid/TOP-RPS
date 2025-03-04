@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Rock-Paper-Scissors</h1>
-        <p>First to 3 points wins!</p>
+      <h1>Rock-Paper-Scissors</h1>
+      <p>First to 3 points wins!</p>
     </header>
-    <hr>
-    <div id="score-container">
+    <hr />
+    <div id="game-box">
+      <div id="score-container">
         <h2 id="player-text">You</h2>
         <div id="score">
-            <h2 id="user-score">0</h2>
-            <h2 id="score-divider">-</h2>
-            <h2 id="computer-score">0</h2>
+          <h2 id="user-score">0</h2>
+          <h2 id="score-divider">-</h2>
+          <h2 id="computer-score">0</h2>
         </div>
         <h2 id="player-text">Computer</h2>
-    </div>
-
-    <div id="playground">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+      </div>
+      <div id="playground">
+        <button class="choice" id="rock">Rock</button>
+        <button class="choice" id="paper">Paper</button>
+        <button class="choice" id="scissors">Scissors</button>
+      </div>
+      <div style="text-align:center;">
+        <button id="new-game" class="hide choice">New Game</button>
+      </div>
+      <div id="gamelog"></div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
